@@ -42,14 +42,13 @@
 //   ];
 
 const serverUrl = NODE_ENV === 'development' ? 'http://praktikum.tk/cohort3' : 'https://praktikum.tk/cohort3'
-//import {serverUrl} from '../index.js';
+
 import {CardList} from './cardlist.js';
 import {Popup, PopupEdit, PopupPicture} from './popups.js';
 import {Api} from './api.js';
 import {UserInfo} from './userinfo.js';
 import {renderButtons} from './renderbuttons.js';
 import {checkInputValidity} from './check_input_validity.js';
-console.log(serverUrl);
 
 export class Card {
   constructor(cardsItem) {   
